@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/04 11:40:54 by jordanmoret       #+#    #+#             */
-/*   Updated: 2026/06/04 15:23:48 by jordanmoret      ###   ########.fr       */
+/*   Created: 2026/06/04 11:57:13 by jordanmoret       #+#    #+#             */
+/*   Updated: 2026/06/04 12:03:12 by jordanmoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int		ft_isalnum(int c)
+int ft_isalpha(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+    return ((c >= 65 && c <= 90) || (c >= 97 && <= 122));
 }
