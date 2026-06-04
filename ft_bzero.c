@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/04 09:51:28 by jordanmoret       #+#    #+#             */
-/*   Updated: 2026/06/04 10:28:43 by jordanmoret      ###   ########.fr       */
+/*   Created: 2026/06/04 10:34:27 by jordanmoret       #+#    #+#             */
+/*   Updated: 2026/06/04 10:40:06 by jordanmoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *str)
+#include "libft.h"
+
+void    ft_bzero(void *s, size_t n)
 {
-	int i;
-	int n;
-	int sign;
-	
-	i = 0;
-	n = 0;
-	sign = 1;
-	while((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			sign = -1;
-		i++;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	 {
-		n = n * 10 + (str[i] - 48);
-		i++;
-	 }
-	 return (n * sign);
+    size_t  i;
+    char    *tmp;
+
+    i = 0;
+    tmp = (char *)s;
+    while (i < n)
+    {
+        tmp[i] = 0;
+        i++,
+    }
 }
